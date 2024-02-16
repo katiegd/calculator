@@ -18,6 +18,11 @@ button:hover {
     background-color: azure;
 }
 
+#num0 {
+    width: 106px;
+    border-radius: 30px;
+}
+
 #func-button {
     background-color: rgb(210, 210, 210);
 }
@@ -41,7 +46,7 @@ button:hover {
 }
 
 #calc-display {
-    width: 200px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -50,7 +55,7 @@ button:hover {
 }
 
 #num-buttons {
-    width: 200px;
+    width: 250px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
