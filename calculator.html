@@ -8,35 +8,31 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<div id="main-container">
-    <div id="calc-display">
-        <input id="calcDisplay" value="0">
-        <button id="func-button">Del</button>
-    </div>
-    <div id="math-buttons" class="functions">
-        <button id="func-button">:)</button>
-        <button id="func-button">AC</button>
-        <button id="func-button">Tip</button>
-        <button id="func-button">÷</button>
-    </div>
-    <div id='num-buttons'>
-        <button id="num" onclick="updateDisplay('7')">7</button>
-        <button id="num" onclick="updateDisplay('8')">8</button>
-        <button id="num" onclick="updateDisplay('9')">9</button>
-        <button id="func-button">*</button>
-        <button id="num" onclick="updateDisplay('4')">4</button>
-        <button id="num" onclick="updateDisplay('5')">5</button>
-        <button id="num" onclick="updateDisplay('6')">6</button>
-        <button id="func-button">-</button>
-        <button id="num" onclick="updateDisplay('1')">1</button>
-        <button id="num" onclick="updateDisplay('2')">2</button>
-        <button id="num" onclick="updateDisplay('3')">3</button>
-        <button id="func-button">+</button>
-        <button id="num0" onclick="updateDisplay('0')">0</button>
-        <button id="num" onclick="updateDisplay('.')">.</button>
-        <button id="func-button">=</button>
+<div class="calculator-grid">
+    <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand">0</div>
 
     </div>
+        <button data-all-clear>AC</button>
+        <button data-tip>TIP</button>
+        <button data-delete>DEL</button>
+        <button data-operation>÷</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>-</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>+</button>
+        <button data-number>0</button>
+        <button data-number>.</button>
+        <button data-equals class="span-two">=</button>
 </div>
     
 </body>
