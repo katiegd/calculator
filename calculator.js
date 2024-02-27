@@ -46,11 +46,9 @@ tipButton.addEventListener('click', () => {
 // Functions
 // Handles the number passed in from the button and appends to the current operator display
 function handleNumber(number) {
-    if(currOperand.length <= 10) {
+    if(number === "." && currOperand.includes(".")) return;
     currOperand += number;
     currOperandTextElement.textContent = currOperand;
-    }
-    if(number === "." && currOperand.includes(".")) return;
 };
 
 // Handles the operator passed in from the button and appends to the previous operator display
